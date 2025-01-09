@@ -17,7 +17,7 @@ public class WPlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(0, 0);
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            rb.velocity += new Vector2(2, 0);
+            rb.velocity += new Vector2(3, 0);
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 rb.velocity += new Vector2(7, 0);
@@ -25,7 +25,7 @@ public class WPlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-            rb.velocity += new Vector2(-2, 0);
+            rb.velocity += new Vector2(-3, 0);
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 rb.velocity += new Vector2(-7, 0);
@@ -33,7 +33,7 @@ public class WPlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
         {
-            rb.velocity += new Vector2(0, 2);
+            rb.velocity += new Vector2(0, 3);
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 rb.velocity += new Vector2(0, 7);
@@ -41,7 +41,7 @@ public class WPlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
-            rb.velocity += new Vector2(0, -2);
+            rb.velocity += new Vector2(0, -3);
             if (Input.GetKey(KeyCode.LeftShift))
             {
                 rb.velocity += new Vector2(0, -7);
