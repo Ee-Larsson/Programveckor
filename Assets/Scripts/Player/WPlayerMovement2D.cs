@@ -23,5 +23,6 @@ public class WPlayerMovement2D : MonoBehaviour
         {
             rb.velocity = new Vector2(-5, 0);
         }
+
     }
 }
