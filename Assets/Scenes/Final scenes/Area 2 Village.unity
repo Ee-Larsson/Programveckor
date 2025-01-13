@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 137886450}
   - component: {fileID: 137886449}
   - component: {fileID: 137886448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 767575786}
   - component: {fileID: 767575785}
   - component: {fileID: 767575784}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -657,7 +657,7 @@ GameObject:
   - component: {fileID: 861508231}
   - component: {fileID: 861508230}
   - component: {fileID: 861508229}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +679,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -770,7 +770,7 @@ Transform:
   m_GameObject: {fileID: 861508228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -10.54, y: -0.65, z: 0}
+  m_LocalPosition: {x: -10.72, y: -0.62, z: 0}
   m_LocalScale: {x: 20.075766, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -814,7 +814,7 @@ Transform:
   m_GameObject: {fileID: 1344899069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -848,8 +848,8 @@ Transform:
   m_GameObject: {fileID: 1350959668}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.65}
+  m_LocalScale: {x: 1.02, y: 1.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1344899071}
@@ -3176,7 +3176,7 @@ GameObject:
   - component: {fileID: 1742271135}
   - component: {fileID: 1742271134}
   - component: {fileID: 1742271138}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3198,7 +3198,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -3316,7 +3316,7 @@ Transform:
   m_GameObject: {fileID: 1742271133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.7, y: 0.68, z: 0}
+  m_LocalPosition: {x: -9.52, y: 0.68, z: 0}
   m_LocalScale: {x: 1, y: 4.1325135, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3334,7 +3334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b882f37523ef76949a704809e1acbc73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 2
+  isplayernearby: 0
 --- !u!1 &2074928919
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,7 +3348,7 @@ GameObject:
   - component: {fileID: 2074928922}
   - component: {fileID: 2074928921}
   - component: {fileID: 2074928925}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3397,7 +3397,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -3506,7 +3506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9e6585916cabb40a9248a88410da46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 4
+  isplayernearby: 0
 --- !u!1 &2078362542
 GameObject:
   m_ObjectHideFlags: 0
@@ -3520,7 +3520,7 @@ GameObject:
   - component: {fileID: 2078362544}
   - component: {fileID: 2078362543}
   - component: {fileID: 2078362547}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3542,7 +3542,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -3660,7 +3660,7 @@ Transform:
   m_GameObject: {fileID: 2078362542}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.47, y: -1.57, z: 0}
+  m_LocalPosition: {x: 9.64, y: -1.57, z: 0}
   m_LocalScale: {x: 1, y: 2.8841338, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3675,9 +3675,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2078362542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a9e6585916cabb40a9248a88410da46, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dbffcb3e6925934282bf618ccdf0f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isplayernearby: 0
   sceneToLoad: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

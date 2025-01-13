@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadSceneOpenArea2 : MonoBehaviour
+public class LoadSceneVillage : MonoBehaviour
 {
-    bool isplayernearby = false;
-    public int sceneToLoad = 4;
+    public bool isplayernearby = false;
+    public int sceneToLoad = 1;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class LoadSceneOpenArea2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(1);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,7 +31,6 @@ public class LoadSceneOpenArea2 : MonoBehaviour
     void OnTriggerExit2D(Collider2D collision)
     {
         isplayernearby = false;
-        
+
     }
 }
-
