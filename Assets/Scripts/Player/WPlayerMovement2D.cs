@@ -19,7 +19,7 @@ public class WPlayerMovement2D : MonoBehaviour
     {
 
         rb.velocity = new Vector2(0, 0);
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) && FindObjectOfType<Pause>().pause == false)
         {
             rb.velocity += new Vector2(3, 0);
             if (Input.GetKey(KeyCode.LeftShift))
@@ -27,7 +27,7 @@ public class WPlayerMovement2D : MonoBehaviour
                 rb.velocity += new Vector2(7, 0);
             }
         }
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) && FindObjectOfType<Pause>().pause == false)
         {
             rb.velocity += new Vector2(-3, 0);
             if (Input.GetKey(KeyCode.LeftShift))
@@ -35,7 +35,7 @@ public class WPlayerMovement2D : MonoBehaviour
                 rb.velocity += new Vector2(-7, 0);
             }
         }
-        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) && FindObjectOfType<Pause>().pause == false)
         {
             rb.velocity += new Vector2(0, 3);
         }

@@ -17,7 +17,7 @@ public class WPlayerMovement : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(0, 0);
-        if (isCutsceneActive == false && (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)))
+        if (isCutsceneActive == false && (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && FindObjectOfType<Pause>().pause == false)
         {
             rb.velocity += new Vector2(3, 0);
             if (Input.GetKey(KeyCode.LeftShift))
@@ -25,7 +25,7 @@ public class WPlayerMovement : MonoBehaviour
                 rb.velocity += new Vector2(7, 0);
             }
         }
-        if (isCutsceneActive == false && (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)))
+        if (isCutsceneActive == false && (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && FindObjectOfType<Pause>().pause == false)
         {
             rb.velocity += new Vector2(-3, 0);
             if (Input.GetKey(KeyCode.LeftShift))
@@ -33,7 +33,7 @@ public class WPlayerMovement : MonoBehaviour
                 rb.velocity += new Vector2(-7, 0);
             }
         }
-        if (isCutsceneActive == false && (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)))
+        if (isCutsceneActive == false && (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && FindObjectOfType<Pause>().pause == false)
         {
             rb.velocity += new Vector2(0, 3);
             if (Input.GetKey(KeyCode.LeftShift))
@@ -41,7 +41,7 @@ public class WPlayerMovement : MonoBehaviour
                 rb.velocity += new Vector2(0, 7);
             }
         }
-        if (isCutsceneActive == false && (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)))
+        if (isCutsceneActive == false && (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && FindObjectOfType<Pause>().pause == false)
         {
             rb.velocity += new Vector2(0, -3);
             if (Input.GetKey(KeyCode.LeftShift))
