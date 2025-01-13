@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadSceneOpenArea : MonoBehaviour
+public class LoadSceneOpenArea2 : MonoBehaviour
 {
     bool isplayernearby = false;
+    public int sceneToLoad = 4;
     // Start is called before the first frame update
     void Start()
     {
