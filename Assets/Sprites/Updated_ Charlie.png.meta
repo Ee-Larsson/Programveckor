@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 63c7720fda41d324397e11cc0017f80e
+guid: 6beb5b32872adcb429d9c8ef5fc7c1f6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: charlie_sprite_sheets_0
+      name: Updated_ Charlie_0
       rect:
         serializedVersion: 2
         x: 2
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d42c2da1baf3403489dbabdb5f9b3be4
-      internalID: -426843985
+      spriteID: a1e2a0e0922c4144cab0390d5617dee4
+      internalID: -742941934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_1
+      name: Updated_ Charlie_1
       rect:
         serializedVersion: 2
         x: 18
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cccde7e73836b643afcad3f088fd6cd
-      internalID: 1096479088
+      spriteID: 23212386bef06e847ba9f076f652199d
+      internalID: 1973588861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_2
+      name: Updated_ Charlie_2
       rect:
         serializedVersion: 2
         x: 34
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ea467bf9d3df614b8acee0ae633bb6a
-      internalID: 1396946030
+      spriteID: 0b824f65a3f177444a0f03e12e963d7d
+      internalID: -1458466484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_3
+      name: Updated_ Charlie_3
       rect:
         serializedVersion: 2
         x: 50
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29a8374780da5304087e12825447d75b
-      internalID: -1638524809
+      spriteID: 26cfde270d8d9604c80ecca304284635
+      internalID: -1939034218
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_4
+      name: Updated_ Charlie_4
       rect:
         serializedVersion: 2
         x: 3
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a06b0741c9b49bf4dad7205b7434aa69
-      internalID: -1420718872
+      spriteID: 9e66cb4f497d1ea4ba69e1c41a10423f
+      internalID: -2100970481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_5
+      name: Updated_ Charlie_5
       rect:
         serializedVersion: 2
         x: 18
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a51e73ca63c9bf343bf67a4e30e7496b
-      internalID: -776224456
+      spriteID: 55ee15a32ff8bbd469c3428a3aedbfea
+      internalID: 894849726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_6
+      name: Updated_ Charlie_6
       rect:
         serializedVersion: 2
         x: 35
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1440f6bc8025aa4298af645e4cb31b4
-      internalID: -2032559990
+      spriteID: f8424fc7b95ecdd40945265db1d41985
+      internalID: 748442323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_7
+      name: Updated_ Charlie_7
       rect:
         serializedVersion: 2
         x: 50
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91a7b1d3dc502704a9c5580dcfe1d949
-      internalID: 1257382582
+      spriteID: 9e8cafb650e47e640ac64d7612f12471
+      internalID: 74008785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_8
+      name: Updated_ Charlie_8
       rect:
         serializedVersion: 2
         x: 3
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81d3dd0f9c28cb04d9738ab43422be13
-      internalID: -326087197
+      spriteID: 094d3630bd117c644bed95842a4a1887
+      internalID: 1217506013
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_9
+      name: Updated_ Charlie_9
       rect:
         serializedVersion: 2
         x: 18
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: deef0a7f60333c64c91117333fa11a1f
-      internalID: -513278048
+      spriteID: 684d136e8a3ce7a45ab7fa16ba9dad7a
+      internalID: -1873743580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_10
+      name: Updated_ Charlie_10
       rect:
         serializedVersion: 2
         x: 35
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06d537864059594429770a148d4996ed
-      internalID: 1233996694
+      spriteID: a2c330d2132ec6f409bb36a5b5e82225
+      internalID: 270691168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_11
+      name: Updated_ Charlie_11
       rect:
         serializedVersion: 2
         x: 50
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9600b9c3db8322e439fb7c248a124961
-      internalID: 1477742135
+      spriteID: 2063f44289474194986afa0411a7f0f0
+      internalID: 923677542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_12
+      name: Updated_ Charlie_12
       rect:
         serializedVersion: 2
         x: 2
@@ -363,14 +363,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acd93c474a5a458418eb77caca5a50a6
-      internalID: 1763729487
+      spriteID: d418fa54f714a564baf80205e5e3c9c0
+      internalID: 1151822575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_13
+      name: Updated_ Charlie_13
       rect:
         serializedVersion: 2
         x: 18
@@ -384,14 +384,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60e9dd78bce91b243aa24a73f94cabe1
-      internalID: 2036576229
+      spriteID: bf99c1cde9fd2c942878c57cca0d408c
+      internalID: 1498521935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_14
+      name: Updated_ Charlie_14
       rect:
         serializedVersion: 2
         x: 34
@@ -405,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d55bda3e1f08de6408a347403125cb21
-      internalID: -1614627941
+      spriteID: d4c58a8e8415bcc41be8da1ecf342712
+      internalID: -142472432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: charlie_sprite_sheets_15
+      name: Updated_ Charlie_15
       rect:
         serializedVersion: 2
         x: 50
@@ -426,8 +426,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99b50e140c4374e4f8f34a588aedb0cc
-      internalID: 2015189726
+      spriteID: d15f76d26f7a0cc4594aab79c79bd48b
+      internalID: -1100370526
       vertices: []
       indices: 
       edges: []
@@ -443,22 +443,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      charlie_sprite_sheets_0: -426843985
-      charlie_sprite_sheets_1: 1096479088
-      charlie_sprite_sheets_10: 1233996694
-      charlie_sprite_sheets_11: 1477742135
-      charlie_sprite_sheets_12: 1763729487
-      charlie_sprite_sheets_13: 2036576229
-      charlie_sprite_sheets_14: -1614627941
-      charlie_sprite_sheets_15: 2015189726
-      charlie_sprite_sheets_2: 1396946030
-      charlie_sprite_sheets_3: -1638524809
-      charlie_sprite_sheets_4: -1420718872
-      charlie_sprite_sheets_5: -776224456
-      charlie_sprite_sheets_6: -2032559990
-      charlie_sprite_sheets_7: 1257382582
-      charlie_sprite_sheets_8: -326087197
-      charlie_sprite_sheets_9: -513278048
+      Updated_ Charlie_0: -742941934
+      Updated_ Charlie_1: 1973588861
+      Updated_ Charlie_10: 270691168
+      Updated_ Charlie_11: 923677542
+      Updated_ Charlie_12: 1151822575
+      Updated_ Charlie_13: 1498521935
+      Updated_ Charlie_14: -142472432
+      Updated_ Charlie_15: -1100370526
+      Updated_ Charlie_2: -1458466484
+      Updated_ Charlie_3: -1939034218
+      Updated_ Charlie_4: -2100970481
+      Updated_ Charlie_5: 894849726
+      Updated_ Charlie_6: 748442323
+      Updated_ Charlie_7: 74008785
+      Updated_ Charlie_8: 1217506013
+      Updated_ Charlie_9: -1873743580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

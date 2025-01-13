@@ -21,22 +21,22 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            Anim.SetInteger("IsMoving", -1);
+            Anim.SetInteger("IsMoving", -2);
             RB.velocity = new Vector2(0, 4);
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            Anim.SetInteger("IsMoving", -2);
+            Anim.SetInteger("IsMoving", -1);
             RB.velocity = new Vector2(0, -4);
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            Anim.SetInteger("IsMoving", 2);
+            Anim.SetInteger("IsMoving", 1);
             RB.velocity = new Vector2(-4, 0);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            Anim.SetInteger("IsMoving", 1);
+            Anim.SetInteger("IsMoving", 2);
             RB.velocity = new Vector2(4, 0);
         }
     }

@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.I))
+        if (Input.GetKeyUp(KeyCode.I) && FindObjectOfType<Pause>().pause == false)
         {
             ToggleVisibility();
         }
