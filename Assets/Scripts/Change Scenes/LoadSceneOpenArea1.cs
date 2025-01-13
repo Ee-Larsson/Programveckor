@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadSceneOpenArea1 : MonoBehaviour
 {
     public bool isplayernearby = false;
-    public int sceneToLoad = 4;
+    public int sceneToLoad = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class LoadSceneOpenArea1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
