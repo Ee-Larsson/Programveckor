@@ -3044,7 +3044,7 @@ GameObject:
   - component: {fileID: 1693543918}
   - component: {fileID: 1693543917}
   - component: {fileID: 1693543916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3679,7 +3679,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isplayernearby: 0
-  sceneToLoad: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

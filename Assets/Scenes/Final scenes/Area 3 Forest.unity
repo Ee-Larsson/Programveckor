@@ -2688,7 +2688,7 @@ GameObject:
   - component: {fileID: 632415808}
   - component: {fileID: 632415807}
   - component: {fileID: 632415806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2948,7 +2948,7 @@ GameObject:
   - component: {fileID: 1253453856}
   - component: {fileID: 1253453855}
   - component: {fileID: 1253453854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3172,7 +3172,7 @@ GameObject:
   - component: {fileID: 1676580708}
   - component: {fileID: 1676580707}
   - component: {fileID: 1676580706}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3192,7 +3192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isplayernearby: 0
-  sceneToLoad: 2
 --- !u!50 &1676580707
 Rigidbody2D:
   serializedVersion: 4
@@ -3343,7 +3342,7 @@ GameObject:
   - component: {fileID: 1823235697}
   - component: {fileID: 1823235696}
   - component: {fileID: 1823235695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3473,7 +3472,7 @@ GameObject:
   - component: {fileID: 1825905359}
   - component: {fileID: 1825905358}
   - component: {fileID: 1825905357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
