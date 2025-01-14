@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 59830393}
   - component: {fileID: 59830392}
   - component: {fileID: 59830391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,9 +375,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 128481094}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.03, y: 3.63, z: 0}
-  m_LocalScale: {x: 1.7485447, y: 1.1044022, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.0299997, y: 3.63, z: 0}
+  m_LocalScale: {x: 1.7485446, y: 1.1044022, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 223647417}
   - component: {fileID: 223647421}
   - component: {fileID: 223647420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isplayernearby: 0
-  sceneToLoad: 1
 --- !u!212 &223647418
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -611,7 +610,7 @@ GameObject:
   - component: {fileID: 627724455}
   - component: {fileID: 627724454}
   - component: {fileID: 627724453}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3005,7 +3004,7 @@ GameObject:
   - component: {fileID: 800019455}
   - component: {fileID: 800019454}
   - component: {fileID: 800019453}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3789,7 +3788,7 @@ GameObject:
   - component: {fileID: 1811485451}
   - component: {fileID: 1811485450}
   - component: {fileID: 1811485449}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Border Block (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4050,8 +4049,8 @@ SceneRoots:
   - {fileID: 800019455}
   - {fileID: 1616429194}
   - {fileID: 1380156371}
-  - {fileID: 128481097}
   - {fileID: 2143690714}
   - {fileID: 1190037746}
+  - {fileID: 128481097}
   - {fileID: 223647419}
   - {fileID: 1429592933}

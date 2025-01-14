@@ -9,9 +9,8 @@ public class LoadSceneForest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isplayernearby = false;
+        
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -22,7 +21,6 @@ public class LoadSceneForest : MonoBehaviour
             SceneManager.LoadScene(3);
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("Något är i närheten");
@@ -34,7 +32,4 @@ public class LoadSceneForest : MonoBehaviour
         isplayernearby = false;
 
     }
-
-
-
 }

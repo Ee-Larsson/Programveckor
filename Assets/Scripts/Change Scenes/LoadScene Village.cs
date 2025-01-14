@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneVillage : MonoBehaviour
 {
-    public bool isplayernearby = false;
-    public int sceneToLoad = 2;
+    public bool isplayernearby = false;   
     // Start is called before the first frame update
     void Start()
     {
