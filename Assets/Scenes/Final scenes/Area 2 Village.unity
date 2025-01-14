@@ -338,6 +338,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1230228716233998521, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230228716233998521, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230228716233998521, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230228716233998521, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1230228716233998521, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2638856040466191237, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
       propertyPath: m_Name
       value: Charlie
@@ -345,6 +365,14 @@ PrefabInstance:
     - target: {fileID: 4207882625360755800, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076867974342351982, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076867974342351982, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8271952137181393719, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
       propertyPath: m_LocalScale.x
@@ -3938,8 +3966,8 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!61 &1740851824
-BoxCollider2D:
+--- !u!60 &1740851824
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3970,7 +3998,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3980,9 +4008,26 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 14.914286, y: 8.771429}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 7.5332217, y: 5.2596765}
+      - {x: 0, y: 8.457143}
+      - {x: -6.790093, y: 4.211862}
+      - {x: -7.0921645, y: 3.3043838}
+      - {x: -7.163889, y: 0.98463243}
+      - {x: -6.0398083, y: 1.0687232}
+      - {x: -4.855944, y: 2.26478}
+      - {x: -3.4464216, y: 2.00357}
+      - {x: -3.5034125, y: 4.149582}
+      - {x: -4.184825, y: 5.1581445}
+      - {x: -3.0704374, y: 5.61652}
+      - {x: 3.933835, y: 5.4881716}
+      - {x: 3.5381646, y: 1.8416324}
+      - {x: 5.5121837, y: 2.7440355}
+      - {x: 5.925613, y: 3.026703}
+      - {x: 7.0914445, y: 3.0135345}
+      - {x: 7.092164, y: 3.3043847}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1742271133
 GameObject:
   m_ObjectHideFlags: 0
