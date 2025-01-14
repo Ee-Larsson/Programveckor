@@ -14,7 +14,7 @@ public class QuestLog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.T) && FindObjectOfType<Pause>().pause == false)
+        if (Input.GetKeyUp(KeyCode.T))
         {
             ToggleVisibility();
         }
