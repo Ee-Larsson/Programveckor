@@ -560,7 +560,7 @@ Transform:
   m_GameObject: {fileID: 399157152}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.83, y: -3.58, z: 0}
+  m_LocalPosition: {x: -7.73, y: -3.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3028,7 +3028,7 @@ Transform:
   m_GameObject: {fileID: 686404201}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.36, y: -3.66, z: 0}
+  m_LocalPosition: {x: 8.28, y: -3.62, z: 0}
   m_LocalScale: {x: 3.8726, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3552,8 +3552,8 @@ Transform:
   m_GameObject: {fileID: 1823235694}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14, y: -4.83, z: 0}
-  m_LocalScale: {x: 21.079554, y: 1, z: 1}
+  m_LocalPosition: {x: 0.14, y: -4.6997, z: 0}
+  m_LocalScale: {x: 21.079554, y: 1.2606, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3682,7 +3682,7 @@ Transform:
   m_GameObject: {fileID: 1825905356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4298, y: 5.62, z: 0}
+  m_LocalPosition: {x: -0.4298, y: 5.58, z: 0}
   m_LocalScale: {x: 22.055237, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3696,6 +3696,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1230228716233998521, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2638856040466191237, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
       propertyPath: m_Name
       value: Charlie
@@ -3703,6 +3707,10 @@ PrefabInstance:
     - target: {fileID: 4207882625360755800, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076867974342351982, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8271952137181393719, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
       propertyPath: m_LocalScale.x
