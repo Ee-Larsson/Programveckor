@@ -18,7 +18,6 @@ public class LoadSceneVillage : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-
             SceneManager.LoadScene(2);
         }
     }
