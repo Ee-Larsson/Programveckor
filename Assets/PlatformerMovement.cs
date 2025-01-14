@@ -8,19 +8,25 @@ public class PlatformerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         RB.velocity = new Vector2(0, 0);
-        if (Input.GetKeyDown(KeyCode.D))
+
+        if (Input.GetKey(KeyCode.D))
         {
             RB.velocity = new Vector2(10, 0);
-        } else if (Input.GetKeyDown(KeyCode.A))
+        }
+        if (Input.GetKey(KeyCode.A))
         {
             RB.velocity = new Vector2(-10, 0);
         }
+
+
     }
+
+   
 }
