@@ -3769,7 +3769,7 @@ GameObject:
   - component: {fileID: 1740851823}
   - component: {fileID: 1740851822}
   - component: {fileID: 1740851824}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Houses 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
