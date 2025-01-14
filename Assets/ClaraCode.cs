@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class ClaraCode : MonoBehaviour
 {
-    bool Sit = false;
+    public Animator Anim;
+    bool SittingVariable = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,17 +19,15 @@ public class ClaraCode : MonoBehaviour
 
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            if (Sit == false)
-            {
-                Sit = true;
-            } else if (Sit == true)
-            {
-                Sit = false;
-            }
-        }
+        SittingVariable = true;
+        Anim.SetBool("Sit", true);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        SittingVariable = false;
+        Anim.SetBool("Sit", false);
     }
 }
