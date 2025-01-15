@@ -6,12 +6,15 @@ using UnityEngine;
 public class PlatformerMovement : MonoBehaviour
 {
     Rigidbody2D RB;
-    public GroundCheck script;
+
+    public GroundCheck script; //Used to get all of the variables needed from other scripts
+    public WallCheckerLeft Left;
+    public WallCheckerRight Right;
+
     // Start is called before the first frame update
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
-
     }
 
     // Update is called once per frame
@@ -26,11 +29,11 @@ public class PlatformerMovement : MonoBehaviour
 
     void Movement()
     {
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && Right.TouchWallRight == false)
         {
             RB.velocity = new Vector2(10, 0);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && Left.TouchWallLeft == false)
         {
             RB.velocity = new Vector2(-10, 0);
         }
