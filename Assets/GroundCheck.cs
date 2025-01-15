@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class GroundCheck : MonoBehaviour
 {
-    public GameObject Charlie;
+    public bool Grounded = false;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Charlie.transform.position + new Vector3(0, 2, 0);
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Grounded = true;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        Grounded = false;
     }
 }
