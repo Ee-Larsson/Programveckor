@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlatformerMovement : MonoBehaviour
 {
     Rigidbody2D RB;
+    public int JumpPower;
 
     public GroundCheck script; //Used to get all of the variables needed from other scripts
     public WallCheckerLeft Left;
@@ -45,8 +46,7 @@ public class PlatformerMovement : MonoBehaviour
         {
             if (script.Grounded == true)
             {
-                print("odd");
-                RB.velocity = new Vector2(0, 50);
+                RB.velocity = new Vector2(RB.velocity.x, JumpPower);
             }
         }
     }
