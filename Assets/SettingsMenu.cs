@@ -1,15 +1,16 @@
-using UnityEngine.Audio;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SettingsMenu : MonoBehaviour
 {
     public AudioMixer mainMixer;
-    
+
     public void SetVolume(float volume)
     {
-        mainMixer.setVolume("volume", volume);
+        // Adjust "volume" parameter in the AudioMixer
+        mainMixer.SetFloat("volume", volume);
     }
-    
+
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
@@ -17,6 +18,6 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetQuality(int qualityIndex)
     {
-        QualitySettings.SetQualityLevel (qualityIndex);
+        QualitySettings.SetQualityLevel(qualityIndex);
     }
 }
