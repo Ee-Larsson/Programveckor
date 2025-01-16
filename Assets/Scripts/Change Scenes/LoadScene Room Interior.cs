@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadSceneForest : MonoBehaviour
+public class LoadSceneRoomInterior : MonoBehaviour
 {
     public bool isplayernearby = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     // Update is called once per frame
     void Update()
@@ -18,7 +18,7 @@ public class LoadSceneForest : MonoBehaviour
         if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(7);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
