@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final scenes/Area 6 Pier.unity
     guid: 7a28e08684d98cc48800678d9b5f2a01
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Room Interior.unity
+    guid: dd7c9c2677df2d14ea0a287994d0600a
   m_configObjects: {}
