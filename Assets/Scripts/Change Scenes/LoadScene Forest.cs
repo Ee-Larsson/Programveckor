@@ -15,7 +15,7 @@ public class LoadSceneForest : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && isplayernearby == true)
+        if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
             SceneManager.LoadScene(3);
