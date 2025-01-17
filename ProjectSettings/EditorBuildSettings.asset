@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Final scenes/Start Menu.unity
     guid: c9d1684e94cd18c47a1145b6419d15be
   - enabled: 1
-    path: Assets/Scenes/Final scenes/Start scene.unity
+    path: Assets/Scenes/Final scenes/Crystal room.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Final scenes/Area 2 Village.unity
