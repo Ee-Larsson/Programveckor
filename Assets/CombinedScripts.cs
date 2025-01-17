@@ -14,6 +14,10 @@ public class PlatformerMovement : MonoBehaviour
 
     public Animator animator;
 
+    public LeftChecker Left;
+    public RightChecker Right;
+
+
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
@@ -31,11 +35,11 @@ public class PlatformerMovement : MonoBehaviour
     {
         float horizontalInput = 0f;
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && Left.TouchLeft == false)
         {
             horizontalInput = 1f;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A) && Right.TouchRight == false)
         {
             horizontalInput = -1f;
         }
