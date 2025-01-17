@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    public bool isInventoryOpen = false;
     public GameObject inventory;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class Inventory : MonoBehaviour
         if (inventory != null)
         {
             inventory.SetActive(!inventory.activeSelf);
+            isInventoryOpen = !isInventoryOpen;
         }
     }
 }

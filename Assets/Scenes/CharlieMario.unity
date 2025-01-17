@@ -409,7 +409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 10
-  groundCheck: {fileID: 0}
+  jumpCooldown: 0.5
+  groundCheckThreshold: 0.1
   animator: {fileID: 1159762407}
 --- !u!1 &1794192512
 GameObject:
