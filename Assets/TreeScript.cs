@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tree : MonoBehaviour
+public class TreeScript : MonoBehaviour
 {
     public int TreeHealth = 4;
     // Start is called before the first frame update
