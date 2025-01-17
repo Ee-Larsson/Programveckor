@@ -68,7 +68,7 @@ public class PlatformerMovement : MonoBehaviour
     void HandleJumping()
     {
         // Use vertical velocity to check if the character is grounded
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && Time.time - lastJumpTime >= jumpCooldown)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W)) && IsGrounded() && Time.time - lastJumpTime >= jumpCooldown)
         {
             Debug.Log("Jumping!");
             RB.velocity = new Vector2(RB.velocity.x, jumpForce);
