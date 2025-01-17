@@ -6,21 +6,24 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject Pausemenu;
-    public bool ispaused;
-    // Start is called before the first frame update
+
     void Start()
     {
+        if (Pausemenu == null)
+        {
+            Debug.LogError("Pausemenu GameObject is not assigned!");
+            return;
+        }
+
         Pausemenu.SetActive(false);
-        ispaused = false;
+        Time.timeScale = 1f; // Ensure time scale is normal at start
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            print("backspace");
-            if (ispaused)
+            if (Time.timeScale == 0f)
             {
                 ResumeGame();
             }
@@ -30,25 +33,37 @@ public class PauseMenu : MonoBehaviour
             }
         }
     }
+
     public void PauseGame()
     {
-        Pausemenu.SetActive(true);
-        Time.timeScale = 0f;
-        ispaused = true;
+        if (Pausemenu != null)
+        {
+            Pausemenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
     }
+
     public void ResumeGame()
     {
-        Pausemenu.SetActive(false);
-        Time.timeScale = 1f;
-        ispaused = false;
+        if (Pausemenu != null)
+        {
+            Pausemenu.SetActive(false);
+            Time.timeScale = 1f;
+        }
     }
+
     public void Mainmenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Start Menu"); // Replace with the correct scene name
     }
+
     public void QuitGame()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
     }
 }
