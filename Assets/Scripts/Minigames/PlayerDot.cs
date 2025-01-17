@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDot : MonoBehaviour
 {
     Rigidbody2D RB;
+    static bool Win = false;
 
     bool ForS = false; //Used for winning and losing
 
@@ -26,11 +28,11 @@ public class PlayerDot : MonoBehaviour
 
     void BackAndForwards()
     {
-        if (transform.position.x <= -10) // Used for dot moving right and left
+        if (transform.position.x <= -8) // Used for dot moving right and left
         {
             RB.velocity = new Vector2(20, 0);
         }
-        else if (transform.position.x >= 10)
+        else if (transform.position.x >= 8)
         {
             RB.velocity = new Vector2(-20, 0);
         }
@@ -40,10 +42,11 @@ public class PlayerDot : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space) && ForS == false)
         {
-            print("You're ass");
+            print("try again");
         } else if (Input.GetKeyUp(KeyCode.Space) && ForS == true)
         {
-            print("Bro's cooking");
+            Win = true;
+            SceneManager.LoadScene(10);
         }
     }
 
