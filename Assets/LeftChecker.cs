@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Minigame : MonoBehaviour
+public class LeftChecker : MonoBehaviour
 {
-    
+    public bool TouchLeft;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,11 +17,13 @@ public class Minigame : MonoBehaviour
 
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Input.GetKey(KeyCode.E))
-        {
-            SceneManager.LoadScene(2);
-        }
+        TouchLeft = true;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        TouchLeft = false;
     }
 }

@@ -8,8 +8,7 @@ public class PlatformerMovement1 : MonoBehaviour
     Rigidbody2D RB;
     public int JumpPower;
 
-    public GroundCheck script; //Used to get all of the variables needed from other scripts
- 
+    public GroundCheck script; //Used to get all of the variables needed from other script
 
     // Start is called before the first frame update
     void Start()
