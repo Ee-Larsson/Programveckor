@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformerMovement : MonoBehaviour
+public class PlatformerMovement1 : MonoBehaviour
 {
     Rigidbody2D RB;
     public int JumpPower;
 
     public GroundCheck script; //Used to get all of the variables needed from other scripts
-    public WallCheckerLeft Left;
-    public WallCheckerRight Right;
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +29,11 @@ public class PlatformerMovement : MonoBehaviour
 
     void Movement()
     {
-        if (Input.GetKey(KeyCode.D) && Right.TouchWallRight == false)
+        if (Input.GetKey(KeyCode.D))
         {
             RB.velocity = new Vector2(10, 0);
         }
-        if (Input.GetKey(KeyCode.A) && Left.TouchWallLeft == false)
+        if (Input.GetKey(KeyCode.A))
         {
             RB.velocity = new Vector2(-10, 0);
         }
