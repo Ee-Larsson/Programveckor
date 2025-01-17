@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 394391153133701899}
   - component: {fileID: 2161831546842614865}
+  - component: {fileID: 4948224615352573927}
   - component: {fileID: 5312514981131296021}
   - component: {fileID: 7398163930034023781}
   - component: {fileID: 2933612123706475928}
-  - component: {fileID: 4948224615352573927}
   m_Layer: 0
   m_Name: MarioCharlie
   m_TagString: Untagged
@@ -91,6 +91,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4948224615352573927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964698771361932100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3177ff43c1869498043fd3d1360a8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+  jumpForce: 15
+  jumpCooldown: 0.5
+  groundCheckThreshold: 0.1
+  animator: {fileID: 5312514981131296021}
 --- !u!95 &5312514981131296021
 Animator:
   serializedVersion: 5
@@ -184,23 +201,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.115943715, y: 0.28198123}
   m_EdgeRadius: 0
---- !u!114 &4948224615352573927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964698771361932100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a3177ff43c1869498043fd3d1360a8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 8
-  jumpForce: 15
-  jumpCooldown: 0.5
-  groundCheckThreshold: 0.1
-  animator: {fileID: 5312514981131296021}
 --- !u!1 &3409532392829799686
 GameObject:
   m_ObjectHideFlags: 0
