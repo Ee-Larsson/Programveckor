@@ -6,9 +6,10 @@ using UnityEngine;
 public class Thingdisappear : MonoBehaviour
 {
     bool isPlayerNear = false;
-    GameObject thingNPC;
+    public GameObject thingNPC;
     public float startTime = 1;
     float currentTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,16 +21,16 @@ public class Thingdisappear : MonoBehaviour
     {
         if (isPlayerNear == true)
         {
-            thingNPC.SetActive(false);
+            thingNPC.transform.position = new Vector2(500, 0);
         }
-        if (currentTime <= 0)
+        if (currentTime <= 0 && isPlayerNear == false)
         {
-            thingNPC.SetActive(true);
+            thingNPC.transform.position = new Vector2(-1.77f, 4.35f);
         }
-        else 
-        if (currentTime >= 0)
+        else if (currentTime >= 0 )
         {
             currentTime -= Time.deltaTime;
+            print(currentTime);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,6 +40,7 @@ public class Thingdisappear : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         currentTime = startTime;
+        isPlayerNear = false;
     }
 
 }
