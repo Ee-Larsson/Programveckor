@@ -15,6 +15,7 @@ public class PlatformerMovement : MonoBehaviour
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
+
     }
 
     // Update is called once per frame
@@ -32,6 +33,7 @@ public class PlatformerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             horizontalInput = 1f; // Move right
+
         }
         else if (Input.GetKey(KeyCode.A))
         {
