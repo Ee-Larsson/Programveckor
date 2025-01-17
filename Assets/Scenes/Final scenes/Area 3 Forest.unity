@@ -5355,6 +5355,8 @@ GameObject:
   - component: {fileID: 1832017511}
   - component: {fileID: 1832017510}
   - component: {fileID: 1832017509}
+  - component: {fileID: 1832017512}
+  - component: {fileID: 1832017513}
   m_Layer: 0
   m_Name: Thing_NPC
   m_TagString: Untagged
@@ -5450,6 +5452,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1832017512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832017508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57764990e2ea104d97c7890e7b0012c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingNPC: {fileID: 1832017508}
+  startTime: 2
+--- !u!61 &1832017513
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832017508}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 447
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.06500828, y: -0.44206023}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.794246, y: 2.8841205}
+  m_EdgeRadius: 0
 --- !u!1001 &1864345794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5465,6 +5526,10 @@ PrefabInstance:
     - target: {fileID: 2638856040466191237, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
       propertyPath: m_Name
       value: Charlie
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638856040466191237, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4207882625360755800, guid: bf5ca6413e8cf7c42bc97c5e8a7c598e, type: 3}
       propertyPath: m_SortingOrder
