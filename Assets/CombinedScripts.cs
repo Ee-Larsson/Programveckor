@@ -5,20 +5,22 @@ using UnityEngine;
 public class PlatformerMovement : MonoBehaviour
 {
     Rigidbody2D RB;
-    public float moveSpeed = 10f; // Speed for horizontal movement
-    public float jumpForce = 15f; // Force applied for jumping
+    public float moveSpeed = 10f;
+    public float jumpForce = 15f;
 
-    public GroundCheck groundCheck;  // To check if the character is grounded
-    public Animator animator; // Animator for handling character animations
+    public float jumpCooldown = 0.5f; // Cooldown in seconds
+    private float lastJumpTime = 0f; // Tracks time of last jump
+    public float groundCheckThreshold = 0.1f; // Threshold for detecting "grounded" state
 
-    // Start is called before the first frame update
+    public Animator animator;
+
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
-
+        if (animator == null)
+            Debug.LogError("Animator is not assigned!");
     }
 
-    // Update is called once per frame
     void Update()
     {
         HandleMovement();
@@ -29,52 +31,54 @@ public class PlatformerMovement : MonoBehaviour
     {
         float horizontalInput = 0f;
 
-        // Use A and D keys for movement
         if (Input.GetKey(KeyCode.D))
         {
-            horizontalInput = 1f; // Move right
-
+            horizontalInput = 1f;
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            horizontalInput = -1f; // Move left
+            horizontalInput = -1f;
         }
 
         Vector2 currentVelocity = RB.velocity;
 
         if (horizontalInput > 0)
         {
-            // Move right
             RB.velocity = new Vector2(moveSpeed, currentVelocity.y);
-            transform.localScale = new Vector3(5, 5, 100); // Face right
-            animator.SetInteger("IsMoving", 2); // Set moving right animation
+            transform.localScale = new Vector3(5, 5, 100);
+            animator.SetInteger("IsMoving", 2);
         }
         else if (horizontalInput < 0)
         {
-            // Move left
             RB.velocity = new Vector2(-moveSpeed, currentVelocity.y);
-            transform.localScale = new Vector3(5, 5, 5); // Face left
-            animator.SetInteger("IsMoving", 1); // Set moving left animation
+            transform.localScale = new Vector3(5, 5, 5);
+            animator.SetInteger("IsMoving", 1);
         }
         else
         {
-            // No movement
             RB.velocity = new Vector2(0, currentVelocity.y);
-            animator.SetInteger("IsMoving", 0); // Set idle animation
+            animator.SetInteger("IsMoving", 0);
         }
     }
 
     void HandleJumping()
     {
-        // Use Backspace for jumping
-        if (Input.GetKeyDown(KeyCode.Space) && groundCheck.Grounded)
+        // Use vertical velocity to check if the character is grounded
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() && Time.time - lastJumpTime >= jumpCooldown)
         {
-            // Apply jump force
+            Debug.Log("Jumping!");
             RB.velocity = new Vector2(RB.velocity.x, jumpForce);
-            animator.SetTrigger("Jump"); // Play jump animation
+            animator.SetTrigger("Jump");
+            lastJumpTime = Time.time; // Reset jump timer
         }
 
-        // Update grounded animation state
-        animator.SetBool("IsJumping", !groundCheck.Grounded);
+        // Update animation state
+        animator.SetBool("IsJumping", !IsGrounded());
+    }
+
+    // Grounded state based on vertical velocity
+    bool IsGrounded()
+    {
+        return Mathf.Abs(RB.velocity.y) < groundCheckThreshold;
     }
 }
