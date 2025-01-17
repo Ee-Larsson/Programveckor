@@ -18,7 +18,7 @@ public class LoadScenePier : MonoBehaviour
         if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene("Area 6 Pier");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

@@ -4,5 +4,44 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/FinishedGame.unity
+    guid: 0ee10c4f9984a04478cbbf835c5c86e5
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/SettingMenu.unity
+    guid: 7a7c0aeccfccc224096440c28d2a866c
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Area 3 Forest.unity
+    guid: 6d269b0dc6f221945a719c93302ba174
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Area 4 Open Area two.unity
+    guid: 20ea669d02b2b9a4297b23f96e16c4bc
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Area 5 open Area one.unity
+    guid: d652b41ad2b69c14a9e6d9040e4bcfb5
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Area 6 Pier.unity
+    guid: 7a28e08684d98cc48800678d9b5f2a01
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Cave Entrance.unity
+    guid: f44cef7836ba78c4a987fcaa0564f335
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/CaveSection.unity
+    guid: 9273141b83f9ba548bc9032137066e1b
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Crystal room.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Death ending.unity
+    guid: 9699a9df0651f9441a24b9ba2831c109
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Room Interior.unity
+    guid: dd7c9c2677df2d14ea0a287994d0600a
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Start Menu.unity
+    guid: c9d1684e94cd18c47a1145b6419d15be
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/Area 2 Village.unity
+    guid: b693ca444f12e87409082982c5d82484
   m_configObjects: {}

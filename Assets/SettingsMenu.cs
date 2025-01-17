@@ -24,6 +24,6 @@ public class SettingsMenu : MonoBehaviour
     public void Mainmenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Start Menu");
     }
 }

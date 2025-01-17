@@ -18,7 +18,7 @@ public class LoadSceneOpenArea1 : MonoBehaviour
         if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene("Area 5 open Area one");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

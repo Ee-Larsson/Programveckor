@@ -18,7 +18,7 @@ public class LoadSceneVillage : MonoBehaviour
         if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("Area 2 Village");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

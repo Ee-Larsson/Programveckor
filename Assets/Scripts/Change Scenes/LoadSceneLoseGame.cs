@@ -19,7 +19,7 @@ public class LoadSceneLoseGame : MonoBehaviour
         if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(12);
+            SceneManager.LoadScene("Death ending");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

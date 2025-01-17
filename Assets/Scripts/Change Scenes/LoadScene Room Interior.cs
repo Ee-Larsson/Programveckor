@@ -18,7 +18,7 @@ public class LoadSceneRoomInterior : MonoBehaviour
         if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene("Room Interior");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

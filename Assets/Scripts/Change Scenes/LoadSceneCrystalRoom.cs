@@ -18,7 +18,7 @@ public class LoadSceneCrystalRoom : MonoBehaviour
         if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Crystal room");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
