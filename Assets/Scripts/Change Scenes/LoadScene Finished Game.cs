@@ -18,7 +18,7 @@ public class LoadScene : MonoBehaviour
         if (isplayernearby == true && Input.GetKeyDown(KeyCode.E))
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(13);
+            SceneManager.LoadScene(11);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

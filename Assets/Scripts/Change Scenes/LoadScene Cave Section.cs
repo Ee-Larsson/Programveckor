@@ -18,7 +18,7 @@ public class LoadSceneCaveSection : MonoBehaviour
         if (isplayernearby == true)
         {
             print("Spelaren vill prata med NPC");
-            SceneManager.LoadScene(12);
+            SceneManager.LoadScene(10);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
