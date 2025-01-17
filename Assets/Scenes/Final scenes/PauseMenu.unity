@@ -1443,12 +1443,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pausemenu: {fileID: 1311324821}
-  ispaused: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 638998078}
   - {fileID: 1436524126}
-  - {fileID: 206477534}
   - {fileID: 2021932677}
+  - {fileID: 206477534}
