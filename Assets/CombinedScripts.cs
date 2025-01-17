@@ -67,7 +67,7 @@ public class PlatformerMovement : MonoBehaviour
     void HandleJumping()
     {
         // Use Backspace for jumping
-        if (Input.GetKeyDown(KeyCode.Backspace) && groundCheck.Grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && groundCheck.Grounded)
         {
             // Apply jump force
             RB.velocity = new Vector2(RB.velocity.x, jumpForce);
