@@ -36,6 +36,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Final scenes/SettingMenu.unity
     guid: 7a7c0aeccfccc224096440c28d2a866c
   - enabled: 1
+<<<<<<< Updated upstream
+=======
+    path: Assets/Scenes/Harry scene.unity
+    guid: e8d01dec793772f43b8424d9ea0dc5bf
+  - enabled: 1
+    path: Assets/Scenes/WoodMinigame.unity
+    guid: 3a05083e90e7a1e4fb9f1533097bc104
+  - enabled: 1
+>>>>>>> Stashed changes
     path: Assets/Scenes/Final scenes/CaveSection.unity
     guid: 9273141b83f9ba548bc9032137066e1b
   - enabled: 1
