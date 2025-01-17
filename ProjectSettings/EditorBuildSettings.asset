@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final scenes/CaveSection.unity
     guid: 9273141b83f9ba548bc9032137066e1b
+  - enabled: 1
+    path: Assets/Scenes/Final scenes/FinishedGame.unity
+    guid: 0ee10c4f9984a04478cbbf835c5c86e5
   m_configObjects: {}
