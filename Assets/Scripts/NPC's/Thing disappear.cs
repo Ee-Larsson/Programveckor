@@ -24,7 +24,7 @@ public class Thingdisappear : MonoBehaviour
         }
         if (currentTime <= 0 && isPlayerNear == false)
         {
-            thingNPC.transform.position = new Vector2(-1.77f, 4.35f);
+            thingNPC.transform.position = new Vector2(-22.45f, 2.19f);
         }
         else if (currentTime >= 0 )
         {
