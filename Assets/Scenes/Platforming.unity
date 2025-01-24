@@ -579,7 +579,7 @@ GameObject:
   - component: {fileID: 1406651121}
   - component: {fileID: 1406651120}
   m_Layer: 6
-  m_Name: Charlie the square
+  m_Name: Charlie^2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -741,8 +741,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpPower: 15
   script: {fileID: 76910791}
-  Left: {fileID: 1495642329}
-  Right: {fileID: 2098438997}
 --- !u!1 &1495642328
 GameObject:
   m_ObjectHideFlags: 0
