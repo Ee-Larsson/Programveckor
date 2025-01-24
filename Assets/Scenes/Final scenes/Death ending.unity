@@ -577,8 +577,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1732168519}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 1732168520}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: Mainmenu
         m_Mode: 1
         m_Arguments:
@@ -1201,6 +1201,7 @@ GameObject:
   - component: {fileID: 1732168517}
   - component: {fileID: 1732168519}
   - component: {fileID: 1732168518}
+  - component: {fileID: 1732168520}
   m_Layer: 5
   m_Name: DeathMenu
   m_TagString: Untagged
@@ -1255,7 +1256,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Pausemenu: {fileID: 0}
-  ispaused: 0
+--- !u!114 &1732168520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732168516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404e1dfd1471f654c9fe7970e58e30cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMixer: {fileID: 0}
 --- !u!1 &1990365187
 GameObject:
   m_ObjectHideFlags: 0

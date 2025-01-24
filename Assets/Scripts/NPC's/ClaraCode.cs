@@ -6,7 +6,7 @@ using UnityEngine;
 public class ClaraCode : MonoBehaviour
 {
     public Animator Anim;
-    bool SittingVariable;
+    bool SittingVariable = false;
     // Start is called before the first frame update
     void Start()
     {
