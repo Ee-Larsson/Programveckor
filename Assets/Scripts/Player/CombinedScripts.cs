@@ -75,7 +75,6 @@ public class PlatformerMovement : MonoBehaviour
         }
 
         // Update animation state
-        animator.SetBool("IsJumping", !IsGrounded());
     }
 
     // Grounded state based on vertical velocity
