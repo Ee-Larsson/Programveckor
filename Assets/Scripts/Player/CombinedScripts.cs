@@ -49,13 +49,11 @@ public class PlatformerMovement : MonoBehaviour
         if (horizontalInput > 0)
         {
             RB.velocity = new Vector2(moveSpeed, currentVelocity.y);
-            transform.localScale = new Vector3(5, 5, 100);
             animator.SetInteger("IsMoving", 2);
         }
         else if (horizontalInput < 0)
         {
             RB.velocity = new Vector2(-moveSpeed, currentVelocity.y);
-            transform.localScale = new Vector3(5, 5, 5);
             animator.SetInteger("IsMoving", 1);
         }
         else
