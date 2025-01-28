@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
  public void PlayGame()
     {
-        SceneManager.LoadScene("Area 2 Village");
+        SceneManager.LoadScene("Full Scene");
     }
  public void QuitGame()
     {
