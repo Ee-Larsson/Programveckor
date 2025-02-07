@@ -6,11 +6,18 @@ public class PlayerDotScript : MonoBehaviour
 {
     Rigidbody2D RB;
     bool WorL = false;
+
+    public GameObject Line;
+    public GameObject WinningSpot;
+
+    public TreeScript TreeCode;
+
     // Start is called before the first frame update
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
         RB.velocity = new Vector2(10, 0);
+        TreeCode = FindObjectOfType<TreeScript>();
     }
 
     // Update is called once per frame
@@ -18,7 +25,7 @@ public class PlayerDotScript : MonoBehaviour
     {
         Movement();
 
-
+        WinOrLose();
     }
 
     void WinOrLose()
@@ -27,10 +34,11 @@ public class PlayerDotScript : MonoBehaviour
         {
             if (WorL == false)
             {
-                print("miss");
             } else if (WorL == true)
             {
-                print("success");
+                Destroy(TreeCode.WinningSpotClone);
+                Destroy(TreeCode.LineClone);
+                Destroy(gameObject);
             }
         }
     }
@@ -46,12 +54,12 @@ public class PlayerDotScript : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         WorL = true;
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         WorL = false;
     }
