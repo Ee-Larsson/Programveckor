@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Itemintoinventory : MonoBehaviour
 {
+    public Quest1 quest1;
     public bool isPlayerNear = false;
     public GameObject item;
     public Vector2 tpLocation;
     public bool inInventory = false;
 
+    
     // Start is called before the first frame update
     void Start()
     {
         
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +25,8 @@ public class Itemintoinventory : MonoBehaviour
             item.SetActive(false);
             item.transform.position = tpLocation;
             inInventory = true;
+            quest1.playerItemCount++;
+            Debug.Log("One item added to inventory");
         }
         if(FindObjectOfType<Inventory>().isInventoryOpen == true && inInventory == true)
         {
