@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Thingdisappear : MonoBehaviour
 {
-    bool isPlayerNear = false;
+    public bool isPlayerNear = false;
     public GameObject thingNPC;
     public float startTime = 1;
     float currentTime;
@@ -24,7 +24,7 @@ public class Thingdisappear : MonoBehaviour
         }
         if (currentTime <= 0 && isPlayerNear == false)
         {
-            thingNPC.transform.position = new Vector2(-22.45f, 2.19f);
+            thingNPC.transform.localPosition = new Vector2(-22.45f, 2.19f);
         }
         else if (currentTime >= 0 )
         {
@@ -35,11 +35,13 @@ public class Thingdisappear : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         isPlayerNear = true;
+        print("player near");
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         currentTime = startTime;
         isPlayerNear = false;
+        print("player is gone");
     }
 
 }
